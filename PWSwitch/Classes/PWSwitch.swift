@@ -237,7 +237,7 @@ open class PWSwitch: UIControl {
             return _isOn
         }
         set {
-            setOn(newValue, animated: true)
+            setOn(newValue, animated: false)
         }
     }
     
