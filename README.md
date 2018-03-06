@@ -84,7 +84,7 @@ PWSwitch is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "PWSwitch"
+pod 'PWSwitch', :git => 'https://github.com/hawkdp/PWSwitch.git'
 ```
 
 ## Author
