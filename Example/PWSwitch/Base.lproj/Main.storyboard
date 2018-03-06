@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,8 +21,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="old-fy-t0Q">
-                                <rect key="frame" x="200" y="100" width="200" height="400"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="old-fy-t0Q">
+                                <rect key="frame" x="87.5" y="133.5" width="200" height="400"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0It-Bw-OAT" customClass="PWSwitch" customModule="PWSwitch">
                                         <rect key="frame" x="75" y="15" width="50" height="26"/>
@@ -84,9 +84,6 @@
                                             <userDefinedRuntimeAttribute type="color" keyPath="trackOffBorderColor">
                                                 <color key="value" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="trackOffPushBorederColor">
-                                                <color key="value" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="trackOnFillColor">
                                                 <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             </userDefinedRuntimeAttribute>
@@ -127,9 +124,6 @@
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="trackOffBorderColor">
                                                 <color key="value" red="0.69019607839999997" green="0.68627450980000004" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="trackOffPushBorederColor">
-                                                <color key="value" red="0.78882233678926172" green="0.78665726986711415" blue="0.79365706013557047" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="trackOnFillColor">
                                                 <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -184,9 +178,6 @@
                                             <userDefinedRuntimeAttribute type="color" keyPath="trackOffBorderColor">
                                                 <color key="value" red="0.69019607839999997" green="0.68627450980000004" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="trackOffPushBorederColor">
-                                                <color key="value" red="0.78882233680000002" green="0.78665726989999996" blue="0.79365706010000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="trackOnFillColor">
                                                 <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             </userDefinedRuntimeAttribute>
@@ -235,13 +226,29 @@
                                     </mask>
                                 </variation>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fx1-Uy-58Y">
+                                <rect key="frame" x="163.5" y="28" width="47" height="30"/>
+                                <state key="normal" title="Toggle"/>
+                                <connections>
+                                    <action selector="toggleButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Vm8-EM-hyd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="fx1-Uy-58Y" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="9hx-wo-Dwk"/>
                             <constraint firstItem="old-fy-t0Q" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="C07-gh-ZAj"/>
+                            <constraint firstItem="fx1-Uy-58Y" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="nHg-UE-3tP"/>
                             <constraint firstItem="old-fy-t0Q" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="qlX-YX-tnv"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outletCollection property="switchControls" destination="0It-Bw-OAT" collectionClass="NSMutableArray" id="pG2-LY-bbZ"/>
+                        <outletCollection property="switchControls" destination="b09-39-KZp" collectionClass="NSMutableArray" id="VaW-dm-c1B"/>
+                        <outletCollection property="switchControls" destination="7xJ-ZF-uC4" collectionClass="NSMutableArray" id="sVH-WQ-Q5h"/>
+                        <outletCollection property="switchControls" destination="stC-XT-NAS" collectionClass="NSMutableArray" id="6OW-Te-uQ0"/>
+                        <outletCollection property="switchControls" destination="jaS-QG-MbW" collectionClass="NSMutableArray" id="HBD-tj-9ah"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

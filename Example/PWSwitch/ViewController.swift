@@ -10,19 +10,10 @@ import UIKit
 import PWSwitch
 
 class ViewController: UIViewController {
+    @IBOutlet var switchControls: [PWSwitch]!
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    @IBAction func toggleButtonTapped(_ sender: Any) {
+        switchControls.forEach { $0.toggle() }
     }
-
-    func onSwitchChanged() {
-        
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 }
 
